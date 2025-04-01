@@ -15,19 +15,11 @@ ADB Fast Scanner is a high-performance, ultra-lightweight Python tool designed t
 
 ## Installation
 1. Install Python 3.x from [Python's official website](https://www.python.org/).
-2. Clone this repository:
-```bash
-$ git clone <repository-url>
-$ cd adb-fast-scanner
-```
-3. Install dependencies (if any):
-```bash
-$ pip install -r requirements.txt  # If you add any dependencies later
-```
+2. Clone this repository
 
 ## Usage
 ```
-python3 ADBHandshaker.py.py [-h] -f FILE -o OUTPUT [-t THREADS] [-b BATCH]
+python3 ADBHandshaker.py [-h] -f FILE -o OUTPUT [-t THREADS] [-b BATCH]
 ```
 
 ### Arguments:
@@ -40,12 +32,12 @@ python3 ADBHandshaker.py.py [-h] -f FILE -o OUTPUT [-t THREADS] [-b BATCH]
 
 - Scan a file of IP addresses:
 ```bash
-python3 adb_fast_scanner.py -f ips.txt -o results.txt
+python3 ADBHandshaker.py -f ips.txt -o results.txt
 ```
 
 - Scan with 5000 threads and batch size of 50000:
 ```bash
-python3 adb_fast_scanner.py -f ips.txt -o results.txt -t 5000 -b 50000
+python3 ADBHandshaker.py -f ips.txt -o results.txt -t 5000 -b 50000
 ```
 
 ## Output
